@@ -17,5 +17,5 @@ def validate_file_extension(file_object:UploadedFile):
 def validate_file_size(file_object:UploadedFile):   
     MAX_UPLOAD_SIZE = 2_096_152 
     if file_object.size > MAX_UPLOAD_SIZE:
-        raise ValidationError("Max file size is 2MB")
+        raise ValidationError(f"Max file size is 2MB. You upload {(file_object.size/1_048_576):.2f}MB")
     

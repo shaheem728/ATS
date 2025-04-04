@@ -2,6 +2,7 @@ import pytest
 from docx import Document # type: ignore
 from fpdf import FPDF
 from tempfile import NamedTemporaryFile
+from pytest_mock import MockFixture
 import os
 
 FILE_CONTENT:str = "This is a sample document."

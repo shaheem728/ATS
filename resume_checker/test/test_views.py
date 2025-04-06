@@ -1,3 +1,4 @@
+from unittest.mock import MagicMock
 from django.test.client import Client
 from django.urls import reverse
 
